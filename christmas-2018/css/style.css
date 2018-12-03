@@ -1,0 +1,163 @@
+#snow {
+  position: absolute;
+  width: 98vw;
+  height: 98vh;
+  z-index: -1;
+}
+
+body {
+  background: #171e2a;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+svg {
+  margin-top: 10%;
+  max-height: 50vh;
+}
+
+.cls-1 {
+  animation-delay: 2s;
+  animation: treeStroke 100s linear infinite;
+}
+
+.cls-2 {
+  animation: flickring 4s infinite;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+}
+
+.cls-3 {
+  animation: starResize 6s infinite;
+}
+
+.sections {
+  padding: 30px 10vw;
+}
+@media (min-width: 970px) {
+  .sections {
+    padding: 40px calc( (100% - 600px)/2);
+  }
+}
+
+@font-face {
+  font-family: "Mountains of Christmas";
+  font-style: normal;
+  src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2");
+}
+.message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 80px;
+  transform: translateX(-50%);
+  color: #f8e7da;
+  font-family: "Mountains of Christmas";
+}
+.message h1 {
+  font-style: normal;
+  font-size: 4rem;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.message h4 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@keyframes treeStroke {
+  from {
+    stroke-opacity: 0.1;
+    stroke: white;
+    stroke-width: 0.1;
+  }
+  to {
+    stroke-opacity: 1;
+    stroke: white;
+    stroke-width: 0.8;
+  }
+}
+@keyframes starResize {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    stroke: #ffdf9f;
+    stroke-width: 0.2;
+    stroke-opacity: 0.2;
+    opacity: 0.4;
+  }
+  40% {
+    stroke: #ffdf9f;
+    stroke-width: 0.4;
+    stroke-opacity: 0.4;
+    opacity: 0.7;
+  }
+  50% {
+    stroke: #ffdf9f;
+    stroke-width: 0.8;
+    stroke-opacity: 0.8;
+    opacity: 1;
+  }
+  60% {
+    stroke: #ffdf9f;
+    stroke-width: 0.5;
+    stroke-opacity: 0.5;
+    opacity: 0.7;
+  }
+  70% {
+    stroke: #ffdf9f;
+    stroke-width: 0.2;
+    stroke-opacity: 0.2;
+    opacity: 0.5;
+  }
+  80% {
+    stroke: #ffdf9f;
+    stroke-width: 0.1;
+    stroke-opacity: 0.1;
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+@keyframes flickring {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
